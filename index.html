@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Power Generation</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <!-- Botón hamburguesa para móviles -->
+    <button class="hamburger-btn" id="hamburger-toggle">
+        ☰
+    </button>
+    <div class="overlay-mobile" id="overlay-mobile"></div>
+
+    <!-- Contenedor principal -->
+    <div class="app-wrapper">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="logo">WindPower</a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#about">Acerca</a></li>
+                    <li><a href="#benefits">Beneficios</a></li>
+                    <li><a href="#statistics">Estadísticas</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#" id="open-developers-modal">Desarrolladores</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Área de contenido principal -->
+        <div class="main-content">
+            <!-- Cabecera -->
+            <header class="page-header fixed-header">
+                <h1 class="title-h1">Generación de Energía Eólica</h1>
+            </header>
+
+            <!-- Contenido principal -->
+            <main>
+                <!-- Hero Slider -->
+                <section id="hero" class="hero-slider">
+                    <div class="slides-container">
+                        <div class="slide active"><img src="./img/parqueeolico.jpg" alt="Parque eólico" /></div>
+                        <div class="slide"><img src="./img/molinodeviento.webp" alt="Molino de viento" /></div>
+                        <div class="slide"><img src="./img/eolica.jpg" alt="Torre eólica" /></div>
+                        <div class="slide"><img src="./img/IMG1.jpg" alt=" eólica" /></div>
+                        <div class="slide"><img src="./img/IMG2.jpg" alt=" eólica" /></div>
+                    </div>
+                    <button class="slider-btn prev-btn">‹</button>
+                    <button class="slider-btn next-btn">›</button>
+                </section>
+
+                <!-- Sección Acerca de -->
+                <section id="about" class="about-section">
+                    <h2>¿Qué es la energía eólica?</h2>
+                    <p>La energía eólica se genera a partir del viento que mueve las aspas de los aerogeneradores para
+                        producir electricidad. No emite gases de efecto invernadero y reduce la dependencia de
+                        combustibles fósiles.</p>
+                </section>
+
+                <!-- Sección Funcionamiento -->
+                <section id="how-it-works" class="how-it-works-section container">
+                    <h2>¿Cómo funciona la energía eólica?</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <h3>Captación del viento</h3>
+                            <p>Las palas del aerogenerador capturan la energía cinética del viento, haciendo girar un
+                                eje conectado a un generador.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Conversión en electricidad</h3>
+                            <p>El generador transforma la energía mecánica en electricidad que puede ser distribuida o
+                                almacenada.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Distribución a la red</h3>
+                            <p>La electricidad producida se transporta a través de líneas eléctricas hacia hogares,
+                                industrias y ciudades.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tipos de Aerogeneradores -->
+                <section id="turbines" class="turbines-section container">
+                    <h2>Tipos de Aerogeneradores</h2>
+                    <div class="cards aero-types">
+                        <div class="aero-card">
+                            <img src="./img/horizontal.jpg" alt="Horizontal">
+                            <div class="aero-overlay">
+                                <h3>Horizontal</h3>
+                                <p>Los más comunes. Eficientes en áreas abiertas con viento constante. Las palas giran
+                                    como hélices de avión.</p>
+                            </div>
+                        </div>
+                        <div class="aero-card">
+                            <img src="./img/VERTICAL.avif" alt="Vertical">
+                            <div class="aero-overlay">
+                                <h3>Vertical</h3>
+                                <p>Útiles en entornos urbanos o con cambios de dirección del viento. Más compactos y
+                                    silenciosos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Futuro de la energía eólica -->
+                <section id="future" class="future-section container">
+                    <h2>El Futuro de la Energía Eólica</h2>
+                    <p>La innovación en materiales, inteligencia artificial y almacenamiento energético está
+                        transformando la energía eólica. Se prevé que represente una gran parte de la matriz energética
+                        global para 2050, con parques eólicos flotantes y tecnologías híbridas emergentes.</p>
+                </section>
+
+                <!-- Beneficios -->
+                <section id="benefits" class="benefits-section container">
+                    <h2>Beneficios de la Energía Eólica</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-icon">♻️</div>
+                            <h3>Renovable</h3>
+                            <p>El viento es una fuente inagotable y disponible en muchas regiones del mundo.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🌱</div>
+                            <h3>Bajas Emisiones</h3>
+                            <p>No produce dióxido de carbono ni contaminantes durante su operación.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">💰</div>
+                            <h3>Costos Competitivos</h3>
+                            <p>Los costos de instalación y mantenimiento han disminuido, siendo económicamente viable.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🏭</div>
+                            <h3>Descongestiona la red</h3>
+                            <p>Puede instalarse cerca del consumo, reduciendo pérdidas en transmisión.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🛠️</div>
+                            <h3>Fomenta empleos verdes</h3>
+                            <p>Genera trabajo en instalación, operación y mantenimiento.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🔋</div>
+                            <h3>Compatible con almacenamiento</h3>
+                            <p>Puede combinarse con baterías para mejorar la estabilidad energética.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Estadísticas -->
+                <section id="statistics" class="statistics-section container">
+                    <h2>Estadísticas Clave</h2>
+                    <div class="stats">
+                        <div class="stat">
+                            <span>744 GW</span>
+                            <p>Capacidad instalada mundial (2023)</p>
+                        </div>
+                        <div class="stat">
+                            <span>~7%</span>
+                            <p>Participación en generación eléctrica global</p>
+                        </div>
+                        <div class="stat">
+                            <span>45%</span>
+                            <p>Reducción de costos desde 2010</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gráficos -->
+                <section id="charts" class="charts-section container">
+                    <h2>Gráficos de Energía Eólica</h2>
+                    <div class="charts-wrapper">
+                        <div class="chart-card">
+                            <h3>Crecimiento de Capacidad Instalada (GW)</h3>
+                            <canvas id="barChart"></canvas>
+                        </div>
+                        <div class="chart-card">
+                            <h3>Participación Global (%)</h3>
+                            <canvas id="lineChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Proyectos -->
+                <section id="projects" class="projects-section container">
+                    <h2>Proyectos Destacados</h2>
+                    <div class="cards">
+                        <!-- Proyecto 1 -->
+                        <div class="card project-card">
+                            <img src="./img/parqueeolicogansu.avif" alt="Parque Eólico Gansu">
+                            <div class="project-content">
+                                <h3>Parque Eólico Gansu</h3>
+                                <p>China lidera con uno de los parques más grandes, con 8 GW de capacidad instalada.</p>
+                                <a href="https://en.wikipedia.org/wiki/Gansu_Wind_Farm" target="_blank"
+                                    class="btn">Saber más →</a>
+                            </div>
+                        </div>
+
+                        <!-- Proyecto 2 -->
+                        <div class="card project-card">
+                            <img src="./img/londonarray.jpg" alt="London Array">
+                            <div class="project-content">
+                                <h3>London Array</h3>
+                                <p>Ubicado en Reino Unido, este parque offshore cuenta con una capacidad de 630 MW.</p>
+                                <a href="https://en.wikipedia.org/wiki/London_Array" target="_blank" class="btn">Saber
+                                    más →</a>
+                            </div>
+                        </div>
+
+                        <!-- Proyecto 3 -->
+                        <div class="card project-card">
+                            <img src="./img/Roscoe.jpg" alt="Roscoe Wind Farm">
+                            <div class="project-content">
+                                <h3>Roscoe Wind Farm</h3>
+                                <p>En Texas, EE.UU., este parque cuenta con 781 MW y es un ejemplo de energía eólica
+                                    terrestre.</p>
+                                <a href="https://en.wikipedia.org/wiki/Roscoe_Wind_Farm" target="_blank"
+                                    class="btn">Saber más →</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contacto -->
+                <!-- Sección de Contacto Mejorada -->
+                <section id="contact" class="contact-section container">
+                    <h2>Contacto</h2>
+
+                    <!--Formulario -->
+                    <div class="contact-top-row">
+
+                        <!-- Formulario de contacto -->
+                        <div class="contact-form">
+                            <h3>Envíanos un mensaje</h3>
+                            <form action="https://formspree.io/f/mqalygva" method="POST">
+
+                                <!-- Campo Nombre -->
+                                <div class="form-group">
+                                    <label for="name" class="sr-only">Nombre completo</label>
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                                </div>
+
+                                <!-- Campo Email -->
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">Correo electrónico</label>
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="_replyto" placeholder="Correo electrónico"
+                                        required>
+                                </div>
+
+                                <!-- Campo Teléfono -->
+                                <div class="form-group">
+                                    <label for="phone" class="sr-only">Teléfono</label>
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="Teléfono (opcional)">
+                                </div>
+
+                                <!-- Selector de Tema -->
+                                <div class="form-group">
+                                    <label for="subject" class="sr-only">Tema</label>
+                                    <i class="fas fa-comments"></i>
+                                    <select id="subject" name="subject" required>
+                                        <option value="" disabled selected>Selecciona un tema</option>
+                                        <option value="consult">Consulta general</option>
+                                        <option value="project">Propuesta de proyecto</option>
+                                        <option value="collab">Oportunidad de colaboración</option>
+                                        <option value="other">Otro</option>
+                                    </select>
+                                </div>
+
+                                <!-- Área de Mensaje -->
+                                <div class="form-group">
+                                    <label for="message" class="sr-only">Mensaje</label>
+                                    <i class="fas fa-edit"></i>
+                                    <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..."
+                                        required></textarea>
+                                </div>
+
+                                <!-- Botón de Envío -->
+                                <button type="submit" class="btn">
+                                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+            </main>
+
+            <!-- Pie de página -->
+            <footer class="modern-footer">
+                <div class="footer-container">
+                    <!-- Logo y descripción -->
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">WindPower</a>
+                        <p class="footer-description">Innovación en energía eólica para un futuro sostenible.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Boletín informativo -->
+                    <div class="footer-newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Suscríbete para recibir actualizaciones.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit">Suscribirse</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="footer-bottom">
+                    <p>&copy; 2025 WindPower. Todos los derechos reservados.</p>
+                    <div class="legal-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- Modal de Desarrolladores -->
+            <div id="developers-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Desarrolladores</h2>
+                    <div class="developer-cards">
+                        <div class="developer-card">
+                            <img src="./img/Andres Urango.jpg" alt="Desarrollador 1">
+                            <p>Andres Urango</p>
+                            <a href="https://github.com/juanperez" target="_blank" class="github-link"></a>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="developer-card">
+                            <img src="./img/maya.jpg" alt="Desarrollador 2">
+                            <p>Juan Maya</p>
+                            <a href="https://github.com/juankmr22" target="_blank" class="github-link"></a>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="developer-card">
+                            <img src="./img/julian.jpg" alt="Desarrollador 3">
+                            <p>Carlos Ruiz</p>
+                            <a href="https://github.com/Pandora9812" target="_blank" class="github-link"></a>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/toggle.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/charts.js" defer></script>
+</body>
+
+</html>
